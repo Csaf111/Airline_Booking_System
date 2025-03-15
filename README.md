@@ -1,57 +1,7 @@
-✈️ Airline Booking System
-The Airline Booking System is a Flask-based API that enables users to:
-🔍 Search flights
-🎟 Book tickets
-🗂 Manage reservations
-🛫 Track flight statuses
-⭐ Leave reviews for flights
+The Airline Booking System is a Flask-based API designed to simulate a real-world airline booking experience by enabling users to search for flights, book tickets, manage reservations, track flight statuses, and leave reviews. The system follows RESTful API principles, ensuring efficient communication between the front-end and back-end components. It is built using Python (Flask) for the backend, MongoDB for storing flight and user data, and JWT (JSON Web Tokens) for secure authentication. API testing and debugging are handled using Postman.
 
-This system is designed to simulate a real-world airline booking experience while following RESTful API principles.
-🛠 How the Project Functions
-1️⃣ User Authentication
-•	• Users must register with a valid email and password.
-•	• Upon login, an access token is generated to authenticate API requests.
-2️⃣ Flight Management
-•	• The system provides an API to retrieve flight details.
-•	• Admins can add, update, and delete flights.
-•	• Users can search flights based on departure, destination, and date.
-3️⃣ Booking System
-•	• Users can book flights by selecting an available option.
-•	• Booking details include:
-•	• ✈️ Flight Number
-•	• 👤 Passenger Information
-•	• 💺 Seat Class
-•	• 📞 Contact Details
-•	• Users can view, update, or cancel their bookings.
-4️⃣ Flight Status Updates
-•	• Admins can update flight status (On Time, Delayed, Canceled).
-•	• Users can check flight statuses via API.
-5️⃣ Reviews & Ratings
-•	• Users can submit, update, and delete reviews for their flights.
-•	• Reviews include a rating (1-5 stars) and comments.
-🔗 API Endpoints
-Method	Endpoint	Description
-POST	/register	Register a new user
-POST	/login	Login & get authentication token
-GET	/flights	Retrieve all available flights
-GET	/flights/{id}	Retrieve specific flight details
-POST	/bookings	Book a flight
-GET	/bookings/{id}	Retrieve booking details
-PUT	/flights/{flight_id}/status	Update flight status
-DELETE	/bookings/{id}	Cancel a booking
-🚀 Technologies Used
-•	• Python (Flask) – Backend API
-•	• MongoDB – Database for storing user & flight data
-•	• Postman – API Testing & Debugging
-•	• JWT (JSON Web Tokens) – Secure User Authentication
-🛠 How to Run the Project
-1️⃣ Clone the repository
-git clone https://github.com/Csaf111/Airline_Booking_System.git
-2️⃣ Navigate to the project folder
-cd Airline_Booking_System
-3️⃣ Install required dependencies
-pip install -r requirements.txt
-4️⃣ Run the Flask application
-python app.py
-5️⃣ Test the API using Postman or Curl
-Use Postman or cURL to send API requests and verify functionality.
+The system offers several key functionalities. User authentication ensures that only registered users with valid credentials can access the API, with an access token generated upon login. Flight management allows admins to add, update, or delete flights, while users can search flights based on departure, destination, and date. Booking management enables users to select flights, enter passenger details, and confirm reservations. Additionally, flight status updates allow admins to change flight statuses (On Time, Delayed, or Canceled), and users can check these updates via the API. Lastly, the reviews and ratings system lets users submit, update, and delete reviews, including ratings (1-5 stars) and comments.
+
+The API consists of key endpoints, such as registering a user (POST /register), logging in and receiving an authentication token (POST /login), retrieving flight details (GET /flights and GET /flights/{id}), booking flights (POST /bookings), retrieving booking details (GET /bookings/{id}), updating flight statuses (PUT /flights/{flight_id}/status), and canceling bookings (DELETE /bookings/{id}). These endpoints allow seamless interaction between users and the system while maintaining security and efficiency.
+
+To set up the project, users need to clone the repository from GitHub, navigate to the project folder, install dependencies using pip, run the Flask application, and finally test the API using Postman or Curl. This project provides a well-structured and secure approach to airline booking systems, ensuring a smooth experience for both administrators and passengers.
